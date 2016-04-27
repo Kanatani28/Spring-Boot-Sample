@@ -12,6 +12,9 @@ import sample.service.HelloService;
 public class HelloController {
 
 	@Autowired
+	//newしたいやつ
+	//DI依存してるのを注入
+	//本番環境によって切り替えられる
 	HelloService helloService;
 
 	@RequestMapping(path = "/", method = RequestMethod.GET)
